@@ -1,0 +1,37 @@
+<!doctype html>
+<html lang="en">
+    <head> 
+        <meta charset="utf-8">
+        <title>Модальное окно</title>
+        <link rel="stylesheet" type="text/css" href="assets/css/main.css">
+        <link href="https://fonts.googleapis.com/css?family=Varela+Round&display=swap" rel="stylesheet"> 
+        <style>
+            @font-face {
+                font-family: "Arial Rounded MT Bold";
+                src: url(assets/font/arial-rounded-mt-bold.ttf); 
+            }
+        </style>  
+    </head>
+    <body>
+        <main>
+            <h1>Модальное окно</h1>
+            <p>Чем отличаются модальные окна от pop-up’ов:</p>
+            <p> 
+            1. Модальное окно — это окно, которое блокирует работу пользователя с родительским приложением до тех пор, пока это окно не закроют. К этой категории относятся современные лайтбоксы (например, просмотр фоток в фб или вк) и древние модальные окна, вызываемые командами alert, prompt и confirm, которые мы чаще всего называем алертами. Проблема алертов в том, что они перекрывают возможность работы не только с текущей вкладкой, но и со всем браузером до тех пор, пока их не закроешь.
+            </p>
+            <p>
+            2. Pop-up — всплывающее окно. Раньше, когда вкладок в браузерах не было, некоторые страницы открывались в новых окнах. Чаще всего этим злоупотребляли создатели баннеров. Кликнешь по какому-нибудь элементу и у тебя весь рабочий стол в окнах разного размера. А ещё были злостные варианты открытия pop-up’а за границей экрана, чтобы усложнить задачу по его поиску и закрытию. Соответственно, такие окна делились на pop-up’ы, которые появлялись поверх других окон и pop-under’ы, которые, соответственно открывались под другими окнами. Сейчас с pop-up’ами борются сами браузеры и мы их встречаем всё меньше.</p> 
+        </main>
+        <div class="overlay">
+            <div class="popup">
+                <img src="assets/image/little-popup.png" alt="little-popup">
+                <h2>Hi! Im A little Popup</h2>
+                <p>Click below to chat with me about your inner personality. If not just close this window.</p>
+                <button class="exit-btn" title="Нахер!">X</button>
+                <button class="chat-btn" title="Жми в чат!">Chat Now</button>
+            </div>
+        </div>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script> 
+        <script src="assets/js/main.js"></script>                                             
+    </body>    
+</html>
